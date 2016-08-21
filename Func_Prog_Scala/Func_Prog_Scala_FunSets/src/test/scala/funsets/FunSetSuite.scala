@@ -2,7 +2,6 @@ package funsets
 
 import org.scalatest.FunSuite
 
-
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
@@ -46,7 +45,6 @@ class FunSetSuite extends FunSuite {
   // test("adding ints") {
   //   assert(1 + 2 === 3)
   // }
-
 
   import FunSets._
 
@@ -110,5 +108,55 @@ class FunSetSuite extends FunSuite {
     }
   }
 
+  test("intersect contains only contains common elements of each set") {
+    new TestSets {
+      val s4 = union(s1, s2)
+      val s5 = union(s1, s3)
+      val s6 = intersect(s4, s5)
+      assert(contains(s6, 1), "Intersect 1")
+      assert(!contains(s6, 2), "Intersect 2")
+      assert(!contains(s6, 3), "Intersect 3")
+    }
+  }
 
+  test("diff contains only contains elements of first set") {
+    new TestSets {
+      val s4 = union(s1, s2)
+      val s5 = union(s1, s3)
+      val s6 = diff(s4, s5)
+      assert(!contains(s6, 1), "Intersect 1")
+      assert(contains(s6, 2), "Intersect 2")
+      assert(!contains(s6, 3), "Intersect 3")
+    }
+  }
+
+  test("Filter elements greater than 1 in union(1,2)") {
+    new TestSets {
+      val s4 = filter(union(s1, s2), (x: Int) => x > 1)
+      assert(contains(s4, 2), "Filter 2")
+      assert(!contains(s4, 1), "Filter 1")
+    }
+  }
+
+  test("All elements should be less than 3") {
+    new TestSets {
+      val s4 = forall(union(s1, s2), (x: Int) => x < 3)
+      assert(s4, "Filter 2")
+      assert(s4, "Filter 1")
+    }
+  }
+
+  test("There exists at least one element in union(1,2) that is greater than 1") {
+    new TestSets {
+      assert(exists(union(s1, s2), (x: Int) => x > 1))
+    }
+  }
+
+  test("Map a set to its square") {
+    new TestSets {
+      val s4 = map(s2, (x: Int) => x * x)
+      assert(contains(s4, 4), "Square 4")
+      assert(!contains(s4, 2), "Square 2")
+    }
+  }
 }
