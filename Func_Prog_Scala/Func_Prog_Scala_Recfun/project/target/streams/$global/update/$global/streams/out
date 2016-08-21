@@ -2817,7 +2817,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.9!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.5!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3116ms :: artifacts dl 83ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1907ms :: artifacts dl 41ms[0m
 [0m[[0mdebug[0m] [0m	report for default#func_prog_scala_recfun-build;0.1-SNAPSHOT compile produced in /home/arunraj/dev/coursera/Func_Prog_Scala/Func_Prog_Scala_Recfun/project/target/resolution-cache/reports/default-func_prog_scala_recfun-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#func_prog_scala_recfun-build;0.1-SNAPSHOT runtime produced in /home/arunraj/dev/coursera/Func_Prog_Scala/Func_Prog_Scala_Recfun/project/target/resolution-cache/reports/default-func_prog_scala_recfun-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#func_prog_scala_recfun-build;0.1-SNAPSHOT test produced in /home/arunraj/dev/coursera/Func_Prog_Scala/Func_Prog_Scala_Recfun/project/target/resolution-cache/reports/default-func_prog_scala_recfun-build-test.xml[0m
@@ -2831,5 +2831,5 @@
 [0m[[0mdebug[0m] [0m	report for default#func_prog_scala_recfun-build;0.1-SNAPSHOT docs produced in /home/arunraj/dev/coursera/Func_Prog_Scala/Func_Prog_Scala_Recfun/project/target/resolution-cache/reports/default-func_prog_scala_recfun-build-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#func_prog_scala_recfun-build;0.1-SNAPSHOT pom produced in /home/arunraj/dev/coursera/Func_Prog_Scala/Func_Prog_Scala_Recfun/project/target/resolution-cache/reports/default-func_prog_scala_recfun-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#func_prog_scala_recfun-build;0.1-SNAPSHOT scala-tool produced in /home/arunraj/dev/coursera/Func_Prog_Scala/Func_Prog_Scala_Recfun/project/target/resolution-cache/reports/default-func_prog_scala_recfun-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (3116ms resolve - 83ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (1907ms resolve - 41ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
